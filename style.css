@@ -101,6 +101,20 @@ main {
     width: 90%;
 }
 
+.iframe {
+    margin-top: 200px;
+    max-width: 600px;
+    width: 60vw;
+    height: 60%;
+    filter: invert(1) hue-rotate(180deg);
+}
+
+iframe {
+    max-width: 600px;
+    width: 60vw;
+    border: black 1px solid;
+}
+
 @media (max-width: 950px) {
     header {
         background-size: auto 100%; /* не обрезает, сжимает */
