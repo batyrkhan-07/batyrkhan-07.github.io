@@ -78,7 +78,7 @@ main {
 }
 
 .avatar {
-    width: 90vw;
+    width: 70vw;
     margin-top: 200px;
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@ main {
 }
 
 .avatar-video {
-    width: 30vw;
+    height: 25vw;
 }
 
 .avatar-text {
@@ -145,7 +145,12 @@ iframe {
     .avatar-video {
         width: 90%;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .avatar-video {
+        height: 100vw;
     }
 
     .iframe {
