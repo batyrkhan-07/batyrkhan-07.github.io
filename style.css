@@ -74,7 +74,8 @@ main {
 .image-item > img,
 .image-item > video {
     width: 90%;
-    height: 90%;
+    height: auto;
+    display: block;
 }
 
 .avatar {
@@ -116,6 +117,94 @@ iframe {
     border: black 1px solid;
 }
 
+.desc {
+    margin-top: 15px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 150px;
+}
+
+.desc summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: #ffffff;
+    user-select: none;
+}
+
+.desc summary::-webkit-details-marker {
+    display: none; /* hide default arrow */
+}
+
+.desc .arrow {
+    transition: transform 0.3s ease;
+    font-size: 12px;
+}
+
+.desc[open] .arrow {
+    transform: rotate(180deg);
+}
+
+.desc p {
+    width: 80%;
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 950px) {
+    .desc {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+.conclusion {
+    margin-top: 200px;
+    width: 80%;
+}
+
+.conclusion > h1 {
+    margin-top: 100px;
+}
+
+.conclusion > p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    border: none;
+
+    background-color: #002971;
+    color: white;
+    font-size: 24px;
+
+    cursor: pointer;
+    z-index: 9999; /* поверх всех элементов */
+
+    display: none; /* сначала скрыта */
+}
+
+#toTop:hover {
+    background-color: #555;
+}
+
+
+
 @media (max-width: 950px) {
     header {
         background-size: auto 100%; /* не обрезает, сжимает */
@@ -134,7 +223,8 @@ iframe {
 
     .image-item > img{
         width: 100%;
-        height: 100%;
+        height: auto;
+        display: block;
     }
 
     .avatar { 
